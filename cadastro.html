@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Cadastro - Vôlei Brasil</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand">🏐 Vôlei Brasil</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Início <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galeria.html">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Digite para pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+      <a class="btn btn-info my-2 my-sm-0 ml-2" href="cadastro.html" role="button">Cadastre-se</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="py-5 text-center">
+        <span class="d-block mx-auto mb-4 display-1">🏟️</span>
+        <h2>Faça seu cadastro</h2>
+        <p class="lead">Receba atualizações sobre a Seleção Brasileira de Vôlei Feminino.<br/>
+          Faça seu cadastro abaixo para participar do mailing exclusivo.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Seu carrinho</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Cadastro</h6>
+                <small class="text-muted">Assinatura básica gratuita</small>
+              </div>
+              <span class="text-success">0,00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Edição exclusiva</h6>
+                <small class="text-muted">Enviada todos os sábados</small>
+              </div>
+              <span class="text-muted">2,99</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Kit de adesivos</h6>
+                <small class="text-muted">Receba em casa e cole onde quiser</small>
+              </div>
+              <span class="text-muted">5,00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (R$)</span>
+              <strong>7,99</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Código promocional">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Resgatar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Preencha seus dados</h4>
+          <form class="needs-validation mb-5" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nome</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Um primeiro nome válido é obrigatório
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Sobrenome</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Um sobrenome válido é obrigatório
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+              <div class="invalid-feedback">
+                Por favor digite um email válido
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-10 mb-3">
+                <label for="address">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="Rua/Av. ..." required>
+                <div class="invalid-feedback">
+                  Digite um endereço válido
+                </div>
+              </div>
+              <div class="col-md-2 mb-3">
+                <label for="address">Número</label>
+                <input type="text" class="form-control" id="address_n" placeholder="123" required>
+                <div class="invalid-feedback">
+                  Digite o número do seu endereço
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Complemento <span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Casa/Apartamento">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">País</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option>Brasil</option>
+                  <option>Argentina</option>
+                  <option>Bolívia</option>
+                  <option>Chile</option>
+                  <option>Colômbia</option>
+                  <option>Equador</option>
+                  <option>Guiana</option>
+                  <option>Guiana Francesa</option>
+                  <option>Paraguai</option>
+                  <option>Peru</option>
+                  <option>Suriname</option>
+                  <option>Uruguai</option>
+                  <option>Venezuela</option>
+                </select>
+                <div class="invalid-feedback">
+                  Selecione um país
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Estado</label>
+                <input type="text" class="form-control" id="state" placeholder="DF" required>
+                <div class="invalid-feedback">
+                  Digite um estado válido
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">CEP</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Código postal é obrigatório
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address" required>
+              <label class="custom-control-label" for="same-address">Li e concordo com os <a href="#">Termos de Uso</a></label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info" required>
+              <label class="custom-control-label" for="save-info">Aceito o processamento dos meus dados de acordo com a <a href="#">Política de Privacidade</a></label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Pagamento</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Crédito</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Débito</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Nome no cartão</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Nome completo exatamente como no cartão</small>
+                <div class="invalid-feedback">
+                  Nome no cartão é obrigatório
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Número do cartão</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  O número do cartão é obrigatório
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Vencimento</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Forneça a data de vencimento do cartão
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Digite o código de segurança de 3 dígitos atrás do cartão
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar</button>
+          </form>
+        </div>
+      </div>
+
+    </div> <!-- row -->
+  </div> <!-- container-fluid -->
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="../../assets/js/vendor/holder.min.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+</body>
+
+</html>
